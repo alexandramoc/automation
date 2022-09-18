@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: SeleniumfFrstTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.58 sec <<< FAILURE!
+seleniumFirstTest(SeleniumfFrstTest)  Time elapsed: 7.351 sec  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: Element <input class="gLFyf gsfi" name="q" type="text"> is not reachable by keyboard
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'nicu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-120-generic', java.version: '11.0.15'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c018d7ad-08a1-4162-afe0-3b720e98a331, sendKeysToElement {id=82a3eef3-c59e-4eb6-b1db-c81bc19ed5e9, value=[Ljava.lang.CharSequence;@344b8190}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0.1, moz:accessibilityChecks: false, moz:buildID: 20220705093820, moz:debuggerAddress: localhost:35145, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 32538, moz:profile: /tmp/rust_mozprofileP6mwas, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: LINUX, platformVersion: 5.4.0-120-generic, proxy: Proxy(), se:cdp: ws://localhost:35145/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on LINUX (c018d7ad-08a1-4162-afe0-3b720e98a331)] -> name: q]
+Session ID: c018d7ad-08a1-4162-afe0-3b720e98a331
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at SeleniumfFrstTest.seleniumFirstTest(SeleniumfFrstTest.java:24)
+

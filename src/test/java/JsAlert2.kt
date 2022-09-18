@@ -1,0 +1,2 @@
+class JsAlert2 {
+}
